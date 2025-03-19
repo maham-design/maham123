@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- SEO Meta Tags -->
+  <meta name="description" content="An urdu newspaper website is an online platform that delivers news,articles and latest updates in Urdu language.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, web development, your keywords here">
+  <meta name="author" content="Maham">
+  <!-- Robots Meta Tags -->
+  <meta name="robots" content="index, follow"> <!-- Allows search engine indexing -->
+  <meta name="googlebot" content="index, follow">
+
+    <title>News Grid</title>
+    <link rel="stylesheet" href="style.css">
+	
+	<style>
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Naskh Arabic', serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f4f4f4;
+    direction: rtl; /* To make the layout RTL (Right-to-Left) for Urdu */
+}
+header {
+    background-color: #4CAF50;
+	background:linear-gradient(90deg,lightgrey,black);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+	
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(1, 0, 1, 0.5);
+
+	background:linear-gradient(100deg,#D4FCFF,#E6E6FF);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+	
+}
+
+.news-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+	background:linear-gradient(100deg,lightgreen,lightblue);
+}
+footer {
+    background-color:#4CAF50;
+	background-image:linear-gradient(to bottom right,lightgrey,black);
+    color: #fff;
+    padding: 15px 0;
+    text-align: right;
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 30%;
+    padding: 0 13px;
+}
+
+.footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color:lightgrey;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 15px;
+    color:white;
+}
+</style>
+</head>
+<body>
+<header>
+        <h1>اردو اخبار</h1>
+		
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحہ اول</a></li>
+				
+                <li><a href="more info.html">تازہ ترین</a></li>
+				
+                <li><a href="contact.html">رابطہ کریں</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="news-grid">
+        <div class="news-item">
+            <img src="image2.jpg" alt="News Image 1">
+            <p>آخری ہفتے بچوں کے سکولوں کی چھٹیوں کا فیصلہ</p>
+        </div>
+        <div class="news-item">
+            <img src="image1.jpg" alt="News Image 2">
+            <p>بچوں کی تعلیم میں مارک شیٹ کا اضافہ</p>
+        </div>
+        <div class="news-item">
+            <img src="image3.jpg" alt="News Image 3">
+            <p>صحت کے چیک اپ سے بچوں کی تعلیم بہتر ہوئی</p>
+        </div>
+		<div class="news-item">
+            <img src="image5.jpg" alt="News Image 8">
+            <p>سردیوں میں دودھ اور کھجور کا استعمال</p>
+        </div>
+        
+		 <div class="news-item">
+            <img src="image7.jpg" alt="News Image 7">
+            <p>سرکاری سکولوں میں مفت کتابوں کی فراہمی</p>
+        </div>
+        
+        <div class="news-item">
+            <img src="image6.jpg" alt="News Image 6">
+            <p>اساتذہ کی ہڑتال اور سکولوں کی بندش</p>
+        
+      </div>
+<br>	  
+    </div>
+	<footer>
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>ہمارے بارے میں</h4>
+                <p>ہمارا اخبار جدید خبروں اور بہترین مضامین کا مرکز ہے۔ ہم آپ کو باخبر رکھنے کی بھرپور کوشش کرتے ہیں۔</p>
+            </div>
+            <div class="footer-col">
+                <h4>مفید روابط</h4>
+                <ul>
+                    <li><a href="#">صفحہ اول</a></li>
+                    <li><a href="#">خبریں</a></li>
+                    <li><a href="#">رابطہ کریں</a></li>
+                    <li><a href="#">پرائیویسی پالیسی</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>رابطہ کریں</h4>
+                <ul>
+                    <li>فون: +92 300 1234567</li>
+                    <li>ای میل: info@newspaper.com</li>
+                    <li>پتہ: اسلام آباد، پاکستان</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 تمام حقوق محفوظ ہیں | اردو نیوز</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
